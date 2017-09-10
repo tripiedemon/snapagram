@@ -2,14 +2,15 @@
 
 <h1>Snaps</h1>
 
-       <% @snaps.each do |snap| %>
-      <div class="snap-box0">
-         <%= image_tag snap.url, style: 'max-width: 500px' %>
-         <h4> <%= snap.caption %></h4>
-         <h4>Posted by <%= snap.user.email %></h4>
-      </div>
+<center>
+    <% @snaps.each do |snap| %>
+        <div class="snap-box">
+            <%= image_tag snap.url, style: 'max-width: 500px' %>
+            <h4> <%= snap.caption %></h4>
+            <h4>Posted by <%= snap.user.email %></h4>
+         </div>
     <% end %>
-  </center>
+</center>
  
 
 <br>
