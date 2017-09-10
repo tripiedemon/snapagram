@@ -2,18 +2,14 @@
 
 <h1>Snaps</h1>
 
-
        <% @snaps.each do |snap| %>
-      
-        <%= image_tag snap.url, style: 'max-width: 500px' %></td>
-        <%= snap.caption %></td>
-        <%= snap.user %></td>
-        <%= link_to 'Show', snap %></td>
-        <%= link_to 'Edit', edit_snap_path(snap) %></td>
-        <%= link_to 'Destroy', snap, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      
+      <div class="snap-box0">
+         <%= image_tag snap.url, style: 'max-width: 500px' %>
+         <h4> <%= snap.caption %></h4>
+         <h4>Posted by <%= snap.user.email %></h4>
+      </div>
     <% end %>
-  
+  </center>
  
 
 <br>

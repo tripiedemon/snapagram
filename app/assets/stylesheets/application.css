@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+
+.snap-box {
+    border: 5px solid #000;
+    max-width: 505px;
+    padding: 30px 30px;
+    margin: 30px 30px;
+}
