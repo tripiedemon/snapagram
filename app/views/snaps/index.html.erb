@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Snaps</h1>
+
+
+       <% @snaps.each do |snap| %>
+      
+        <%= image_tag snap.url, style: 'max-width: 500px' %></td>
+        <%= snap.caption %></td>
+        <%= snap.user %></td>
+        <%= link_to 'Show', snap %></td>
+        <%= link_to 'Edit', edit_snap_path(snap) %></td>
+        <%= link_to 'Destroy', snap, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      
+    <% end %>
+  
+ 
+
+<br>
+
+<%= link_to 'New Snap', new_snap_path %>

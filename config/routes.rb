@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
- root "pages#home"
+  resources :snaps
+  devise_for :users
+ root "snaps#index"
  
  get "contact" => "pages#contact"
 end
